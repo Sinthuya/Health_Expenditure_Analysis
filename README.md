@@ -57,14 +57,13 @@ RENAME COLUMN finalcial_year TO financial_year;
 EDA involved exploring the health expenditure data to answer key questions such as:
 - What are the major contributors to health expenditure in different states and territories?
 ```Sql
---Retrieve total health expenditure for each state and territory:
-
-SELECT state, SUM(real_expenditure_millions) AS total_expenditure
+SELECT area_of_expenditure, SUM(real_expenditure_millions) AS total_expenditure, (SUM(real_expenditure_millions) / SUM(SUM(real_expenditure_millions)) OVER ()) * 100 AS percentage_contribution
 FROM health_expenditure
-GROUP BY state
+GROUP BY area_of_expenditure
 ORDER BY total_expenditure DESC;
 ```
-Utilised Tableau to create visualisations such as a line chart to showcase the distribution of expenditure across the States and Territories.
+
+Utilised Tableau to create visualisations such as 
 
 - How does the distribution of funding sources vary across regions?
 ```Sql
@@ -73,7 +72,29 @@ SELECT  broad_source_of_funding, SUM(real_expenditure_millions), SUM(real_expend
 FROM health_expenditure
 GROUP BY broad_source_of_funding;
 ```
-Utilised Tableau to create visualisations such as a pie chart to showcase the distribution of funding sources across the regions.
+
+```Sql
+-- detailed sources of funding within broad categories
+SELECT broad_source_of_funding,
+       detailed_source_of_funding,
+       SUM(real_expenditure_millions) AS total_expenditure,
+	   (SUM(real_expenditure_millions) / SUM(SUM(real_expenditure_millions)) OVER ()) * 100 AS percentage_contribution
+FROM health_expenditure
+WHERE broad_source_of_funding = 'Government'
+GROUP BY broad_source_of_funding, detailed_source_of_funding
+ORDER BY total_expenditure DESC;
+
+SELECT broad_source_of_funding,
+       detailed_source_of_funding,
+       SUM(real_expenditure_millions) AS total_expenditure,
+	   (SUM(real_expenditure_millions) / SUM(SUM(real_expenditure_millions)) OVER ()) * 100 AS percentage_contribution
+FROM health_expenditure
+WHERE broad_source_of_funding = 'Non-government'
+GROUP BY broad_source_of_funding, detailed_source_of_funding
+ORDER BY total_expenditure DESC;
+```
+
+Utilised Tableau to create visualisations such as a 
 
 - What trends emerge when analysing health expenditure over consecutive financial years?
 ```Sql
@@ -85,25 +106,32 @@ ORDER BY financial_year DESC;
 ```
 Utilised Tableau to create visualisations such as line chart to shocase  trends in health expenditure over consecutive financial years.
 
-- Which specific areas of expenditure demonstrate the highest impact on the overall healthcare budget?
-```Sql
-
-SELECT area_of_expenditure, SUM(real_expenditure_millions) AS total_expenditure
-FROM health_expenditure
-GROUP BY area_of_expenditure
-ORDER BY total_expenditure DESC;
-```
-
-Utilised Tableau to create visualisations such as... to show the top areas of health expenditure 
   
 - Are there notable differences in health spending between states and territories?
 ```Sql
-SELECT state, SUM(real_expenditure_millions) AS total_expenditure
+SELECT state, SUM(real_expenditure_millions) AS total_expenditure, (SUM(real_expenditure_millions) / SUM(SUM(real_expenditure_millions)) OVER ()) * 100 AS percentage_contribution
 FROM health_expenditure
 GROUP BY state
 ORDER BY total_expenditure DESC;
 ```
-Utilize Tableau maps to visually represent the geographic distribution of health expenditure, highlighting any notable disparities.
+Utilized Tableau maps to visually represent the geographic distribution of health expenditure, highlighting any notable disparities.
 
-### Data analysis
+### Results/Findings
+
+The analysis results are summarised as follows:
+
+1. Major Contributors to Health Expenditure:
+The analysis identified Public hospital as the primary contributor to health expenditure in Australia, accounting for 30% of the total expenditure. Notably, Medical Services also played significant roles with 18% contributions.
+
+2. Distribution of Funding Sources:
+Broad sources of funding were diversified across states and territories. Government Funding constituted 69% of the total funding, while Non-government played significant roles with 31% of the total funding. Largest detailed source of funding for the Government was the Government itself (63%) followed by State and Local (37%). Largest detailed source of funding for the  Non-government was the individuals (54%) followed by Private health insurance funds (26%) and Other non-government (21%).
+
+3. Trends in Health Expenditure Over Year
+Time-series analysis revealed an upward trend in health expenditure over consecutive financial years. Particularly, the years ..... witnessed significant increases, reflecting dynamic changes in the overall expenditure landscape.
+
+4. Disparities in Health Spending:
+Geographic analysis exposed disparities in health expenditure between states and territories. New South Wales (33%) exhibited higher percentage of health expenditure followed by Victoria (24%). In comparison Norther Territory(1%) had the lowest percentage of health expenditure, highlighting regional discrepancies in resource allocation.
+
+### Recomenadtions
+
 
