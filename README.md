@@ -133,5 +133,14 @@ Time-series analysis revealed an upward trend in health expenditure over consecu
 Geographic analysis exposed disparities in health expenditure between states and territories. New South Wales (33%) exhibited higher percentage of health expenditure followed by Victoria (24%). In comparison Norther Territory(1%) had the lowest percentage of health expenditure, highlighting regional discrepancies in resource allocation.
 
 ### Recomenadtions
+Based on the analysis I recomned the following:
+- Addressing regional disparities in health expenditure to ensure equitable access to healthcare services. Initiatives and policies should be aimed at reducing the disparities and to to promote balanced resource allocation, especially in regions with lower percentages of health expenditure like Northern Territory.
+- Since  Public Hospitals are the major contributor to health expenditure, policymakers might consider targeted investments in public healthcare infrastructure, staffing, and resources to ensure the sustainability and productivity of this health sector.
+- The fact that health spending is going up suggests we ned to plan ahead for the future. policymakers can forecast for future health expenditure (area of expenditure and soureces of funding to different regions). This helps them take proactive steps to manage the budget.
+- Given the significant role of individual contributions in the non-government sector, promoting awareness and education around health insurance benefits could be beneficial. Encouraging individuals to explore and utilize private health insurance funds might contribute to more sustainable and diversified funding sources.
 
+### Limitations
+-The accuracy and reliability of the analysis heavily depend on the quality of the provided data. If the dataset contains inaccuracies, missing values, or inconsistencies, it can affect the validity of the findings.
+- The dataset may not cover all relevant factors influencing health expenditure. Factors such as socio-economic indicators, demographic changes, or specific healthcare policies could play a role but might not be included in the dataset
+- External factors such as economic fluctuations, global events, or public health crises (like pandemics) can significantly impact health expenditure. These factors are challenging to predict and may not be adequately addressed in the analysis.
 
