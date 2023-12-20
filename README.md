@@ -5,9 +5,9 @@
 - [Project overview](#project-overview)
 - [Data sources](-data-sources)
 - [Tools](#tools)
-- [Data cleaning/preparation](#data-cleaning-/-preparation)
+- [Data cleaning/preparation](#data-cleaning-and-preparation)
 - [Explanatory data analysis (EDA)](#explanatory-data-analysis-(EDA))
-- [Results/Findings](#results/findings)
+- [Results/Findings](#results-and-findings)
 - [Recomendations](#recomendations)
 - [Limitations](#limitations)
 
@@ -21,7 +21,7 @@ Data.gov.au link: https://data.gov.au/data/dataset/f84b9baf-c1c1-437c-8c1e-654b2
 - PostgreSQL - data cleaning and analysis
 - Tableau - data visualisation
 
-### Data cleaning / preparation
+### Data cleaning and preparation
 In the initial data preparation phase I performed the following tasks:
 1. data loading and inspection
 2. finding/Handling missing values
@@ -117,7 +117,7 @@ ORDER BY total_expenditure DESC;
 ```
 Utilized Tableau maps to visually represent the geographic distribution of health expenditure, highlighting any notable disparities.
 
-### Results/Findings
+### Results and Findings
 
 The analysis results are summarised as follows:
 
