@@ -151,7 +151,7 @@ Based on the analysis I recomend the following:
 - The accuracy and reliability of the analysis heavily depend on the quality of the provided data. If the dataset contains inaccuracies, missing values, or inconsistencies, it can affect the validity of the findings.
 - The dataset may not cover all relevant factors influencing health expenditure. Factors such as socio-economic indicators, demographic changes, or specific healthcare policies could play a role but might not be included in the dataset.
 - External factors such as economic fluctuations, global events, or public health crises (like pandemics) can significantly impact health expenditure. These factors are challenging to predict and may not be adequately addressed in the analysis.
-- The dataset lacks granularity, such as monthly or quarterly data, which could offer insights into short-term trends in health expenditure.
-- Since population data is not included, we cannot analyze health expenditure on a per capita basis. population growth or decline is essential for a more accurate assessment of healthcare spending.
+- The dataset lacks granularity such as monthly or quarterly data, which could offer insights into short term trends in health expenditure.
+- Since population data is not included, we cannot analyse health expenditure on a per capita basis. population growth or decline is essential for a more accurate assessment of healthcare spending.
 - The absence of measures such as performance indicators, limits the ability to assess the effectiveness of health expenditure in delivering healthcare services.
 
