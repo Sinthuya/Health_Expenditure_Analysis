@@ -5,7 +5,7 @@
 - [Project overview](#project-overview)
 - [Data sources](-data-sources)
 - [Tools](#tools)
-- [Data cleaning/preparation](#data-cleaning/preparation)
+- [Data cleaning/preparation](#data-cleaning-/-preparation)
 - [Explanatory data analysis (EDA)](#explanatory-data-analysis-(EDA))
 - [Results/Findings](#results/findings)
 - [Recomendations](#recomendations)
@@ -21,7 +21,7 @@ Data.gov.au link: https://data.gov.au/data/dataset/f84b9baf-c1c1-437c-8c1e-654b2
 - PostgreSQL - data cleaning and analysis
 - Tableau - data visualisation
 
-### Data cleaning/preparation
+### Data cleaning / preparation
 In the initial data preparation phase I performed the following tasks:
 1. data loading and inspection
 2. finding/Handling missing values
