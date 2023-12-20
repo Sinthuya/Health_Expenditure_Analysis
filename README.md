@@ -155,4 +155,3 @@ Based on the analysis I recomend the following:
 - Since population data is not included, we cannot analyze health expenditure on a per capita basis. population growth or decline is essential for a more accurate assessment of healthcare spending.
 - The absence of measures such as performance indicators, limits the ability to assess the effectiveness of health expenditure in delivering healthcare services.
 
-
