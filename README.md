@@ -12,7 +12,7 @@
 - [Limitations](#limitations)
 
 ### Project overview
-This data analysis project aims to provide insights into the financial landscape of the Australian health sector by analysing health expenditure data. We examined the variations between States and Territories, funding source contributions, and trends over time. we used PostgreSQL for data management and Tableau for captivating visualisations. This project aims to equip policymakers, researchers, and healthcare professionals with practical insights, enabling well-informed decision-making within the dynamic realm of public health funding.
+This data analysis project aims to provide insights into the financial landscape of the Australian health sector by analysing health expenditure data form 1997-2011. We examined the variations between States and Territories, funding source contributions, and trends over time. we used PostgreSQL for data management and Tableau for creating visualisations. This project aims to equip policymakers, researchers, and healthcare professionals with practical insights, enabling well informed decision making within the health sector.
 
 ![Tableau dashboard](https://github.com/Sinthuya/Health_Expenditure_In_Australia-1997-2011/assets/150496788/12188552-9dcb-473f-a320-e9ae45099271)
 
@@ -69,7 +69,7 @@ GROUP BY area_of_expenditure
 ORDER BY total_expenditure DESC;
 ```
 
-Utilised Tableau to create visualisations such as a bar chart to show the distribution of expenditure across States and Territories.
+Utilised Tableau to create visualisations such as a bar chart to show the area of expenditure across States and Territories.
 
 - How does the distribution of funding sources vary across regions?
 ```Sql
@@ -145,11 +145,14 @@ Based on the analysis I recomend the following:
 - Addressing regional disparities in health expenditure to ensure equitable access to healthcare services. Initiatives and policies should be aimed at reducing the disparities and to promote balanced resource allocation, especially in regions with lower percentages of health expenditure like Northern Territory.
 - Since public Hospitals are the major contributor to health expenditure, policymakers might consider targeted investments in public healthcare infrastructure, staffing, and resources to ensure the sustainability and productivity of this health sector.
 - The fact that health spending is going up suggests we need to plan ahead for the future. policymakers can forecast for future health expenditure (area of expenditure and sources of funding to different regions). This helps them take proactive steps to manage the budget.
-- Given the significant role of individual contributions in the non-government sector, promoting awareness and education around health insurance benefits could be beneficial. Encouraging individuals to explore and utilize private health insurance funds might contribute to more sustainable and diversified funding sources.
+- Given the significant role of individual contributions in the non-government sector, promoting awareness and education around health insurance benefits could be beneficial. Encouraging individuals to explore and utilise private health insurance funds might contribute to more sustainable funding sources.
 
 ### Limitations
 - The accuracy and reliability of the analysis heavily depend on the quality of the provided data. If the dataset contains inaccuracies, missing values, or inconsistencies, it can affect the validity of the findings.
 - The dataset may not cover all relevant factors influencing health expenditure. Factors such as socio-economic indicators, demographic changes, or specific healthcare policies could play a role but might not be included in the dataset.
 - External factors such as economic fluctuations, global events, or public health crises (like pandemics) can significantly impact health expenditure. These factors are challenging to predict and may not be adequately addressed in the analysis.
+- The dataset lacks granularity, such as monthly or quarterly data, which could offer insights into short-term trends in health expenditure.
+- Since population data is not included, we cannot analyze health expenditure on a per capita basis. population growth or decline is essential for a more accurate assessment of healthcare spending.
+- The absence of measures such as performance indicators, limits the ability to assess the effectiveness of health expenditure in delivering healthcare services.
 
 
