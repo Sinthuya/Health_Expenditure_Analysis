@@ -17,6 +17,8 @@ This data analysis project aims to provide insights into the financial landscape
 ![Tableau dashboard](https://github.com/Sinthuya/Health_Expenditure_In_Australia-1997-2011/assets/150496788/12188552-9dcb-473f-a320-e9ae45099271)
 
 
+Tableau Dashboard [Click here](https://public.tableau.com/app/profile/sinthuya.sivasubramaniam/viz/HealthExpenditureInAustralia1997-2011/Dashboard1)
+
 ### Data sources
 Data.gov.au link: https://data.gov.au/data/dataset/f84b9baf-c1c1-437c-8c1e-654b2829848c/resource/88399d53-d55c-466c-8f4a-6cb965d24d6d/download/healthexpenditurebyareaandsource.csv
 
