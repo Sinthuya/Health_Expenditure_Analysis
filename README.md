@@ -14,7 +14,6 @@
 ### Project overview
 This data analysis project aims to provide insights into the financial landscape of the Australian health sector by analysing health expenditure data. We examined the variations between States and Territories, funding source contributions, and trends over time. we used PostgreSQL for data management and Tableau for captivating visualisations. This project aims to equip policymakers, researchers, and healthcare professionals with practical insights, enabling well-informed decision-making within the dynamic realm of public health funding.
 
-![Dashboard](Tableau dashboard.PNG)
 ![Tableau dashboard](https://github.com/Sinthuya/Health_Expenditure_In_Australia-1997-2011/assets/150496788/12188552-9dcb-473f-a320-e9ae45099271)
 
 
@@ -120,6 +119,8 @@ GROUP BY state
 ORDER BY total_expenditure DESC;
 ```
 Utilized Tableau maps to visually represent the geographic distribution of health expenditure, highlighting any notable disparities.
+
+Tableau Dashboard [Click here](https://public.tableau.com/app/profile/sinthuya.sivasubramaniam/viz/HealthExpenditureInAustralia1997-2011/Dashboard1)
 
 ### Results and Findings
 
